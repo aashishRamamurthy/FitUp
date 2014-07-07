@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Foodeaten">
+
+    <ImageButton
+           android:id="@+id/North_Indian"
+           android:layout_width="150dp"
+           android:layout_height="100dp"
+           android:layout_above="@+id/imageButton4"
+           android:layout_alignParentRight="true"
+           android:onClick="north"
+           android:src="@drawable/northindian" />
+
+    <ImageButton
+        android:id="@+id/Breakfast"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/North_Indian"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Dinner"
+        android:onClick="breakfast"
+        android:src="@drawable/south" />
+
+       <ImageButton
+           android:id="@+id/Beverages"
+           android:layout_width="150dp"
+           android:layout_height="100dp"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/North_Indian"
+           android:layout_marginTop="14dp"
+           android:onClick="beverages"
+           android:src="@drawable/timthumb" />
+
+       <ImageButton
+           android:id="@+id/Dinner"
+           android:layout_width="150dp"
+           android:layout_height="100dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignTop="@+id/Beverages"
+           android:onClick="dinner"
+           android:src="@drawable/dinner" />
+
+       <ImageButton
+           android:id="@+id/Miscellanous"
+           android:layout_width="150dp"
+           android:layout_height="100dp"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/Beverages"
+           android:layout_marginTop="14dp"
+           android:onClick="misc"
+           android:src="@drawable/sweets" />
+
+       <ImageButton
+           android:id="@+id/International"
+           android:layout_width="150dp"
+           android:layout_height="100dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignTop="@+id/Miscellanous"
+           android:onClick="international"
+           android:src="@drawable/international" />
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:onClick="end"
+           android:text="Submit"
+            />
+   
+</RelativeLayout>

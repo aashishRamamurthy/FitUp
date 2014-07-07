@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/Masala"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Dosa Masala" />
+
+    <CheckBox
+        android:id="@+id/Idli"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Idli" />
+    
+    <CheckBox
+        android:id="@+id/Puri"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Puri" />
+    <CheckBox
+        android:id="@+id/Paratha"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Paratha" />
+    <CheckBox
+        android:id="@+id/Sambhar"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Sambhar" />
+    <CheckBox
+        android:id="@+id/Bread_slice"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Bread slice" />
+    <CheckBox
+        android:id="@+id/Subji"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Subji" />
+
+</LinearLayout>
+</ScrollView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:onClick="breakfast_submit" />
+</RelativeLayout>

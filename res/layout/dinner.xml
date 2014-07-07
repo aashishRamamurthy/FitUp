@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="402dp"
+            android:orientation="vertical" >
+    
+    <CheckBox
+        android:id="@+id/Rice"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Plain rice" />
+
+    <CheckBox
+        android:id="@+id/FriedRice"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Cooked rice" />
+    
+    <CheckBox
+        android:id="@+id/Nan"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Nan" />
+    
+    <CheckBox
+        android:id="@+id/Dal"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Dal" />
+    
+    <CheckBox
+        android:id="@+id/Curry"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Curry" />
+    
+    <CheckBox
+        android:id="@+id/Curd"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Curd" />
+
+    
+    
+    <CheckBox
+        android:id="@+id/Soup"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="      Soup" />
+
+</LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:onClick="dinner_submit" />
+
+</RelativeLayout>
